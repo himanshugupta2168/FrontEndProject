@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>REVIEWS HTML</title>
+        <!--Stylesheet------------>
+        <link rel="stylesheet" href="./reviewStyle.css">
+        <!--Fav-icon---------->
+        <link rel="shortcut icon" href="./Assets/icons8-g.svg"/>
+        <!--poppins-font-family----------->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--using-Font-Awesome------>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Testimonials------------>
+        <section id="testimonials">
+
+            <!--heading-->
+            <div class="testimonial-heading">
+                <h1>Customer's Thoughts</h1>
+            </div>
+
+            <!--testimonials-box-container------->
+            <div class="testimonial-box-container">
+
+            <!--BOX-1------->
+            <div class="testimonial-box">
+
+              <!--top-------->
+            <div class="box-top">
+
+                  <!--profile-->
+                <div class="profile">
+                    <!--img----->
+                    <div class="profile-img">
+                        <img src="data:image/jpeg;base64,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" />
+                    </div>
+                      <!--name-and-username-->
+                    <div class="name-user">
+                        <strong> Rahul </strong>
+                        <span>@Rahul13</span>
+                    </div>
+                </div>
+
+                  <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+
+            </div>
+
+              <!--Comments------->
+            <div class="client-comments">
+                <p>I didn't expect much when I ordered this lipstick, but it blew my mind! The color is vibrant, and it stays on all day. The matte finish is fantastic, and it doesn't feel heavy. I've received so many compliments since I started wearing it. Definitely a must-try for guys who want a subtle pop of color.</p>
+            </div>
+
+            </div>
+
+            <!--BOX-2------->
+            <div class="testimonial-box">
+
+                <!--top-------->
+                <div class="box-top">
+
+                    <!--profile-->
+                    <div class="profile">
+                        <!--img----->
+                        <div class="profile-img">
+                            <img src="https://images.pexels.com/photos/3372787/pexels-photo-3372787.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> Riyaa</strong>
+                            <span>@Riya1983</span>
+                        </div>
+                    </div>
+
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <!--Comments------->
+                <div class="client-comments">
+                    <p>I bought this highlighter to add a little extra shimmer for special occasions. It's really easy to apply and gives a nice glow. My only concern is that it can be a bit too intense for everyday wear, but for parties and events, it's perfect!</p>
+                </div>
+                
+            </div>
+
+              <!--BOX-3------->
+            <div class="testimonial-box">
+
+                <!--top-------->
+                <div class="box-top">
+
+                    <!--profile-->
+                    <div class="profile">
+                        <!--img----->
+                        <div class="profile-img">
+                            <img src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=800" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> Sahil</strong>
+                            <span>@Sahil9334</span>
+                        </div>
+                    </div>
+
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+
+                </div>
+
+                <!--Comments------->
+                <div class="client-comments">
+                    <p>This beard oil is a game-changer for guys like me who take their facial hair seriously. It not only smells fantastic but also tames unruly beards and keeps them soft. I've noticed a significant improvement in beard health since I started using it. Plus, the packaging is sleek and masculine, making it a must-have for any man with facial hair.                    </p>
+                </div>
+                
+                </div>
+
+              <!--BOX-4------->
+            <div class="testimonial-box">
+
+                <!--top-------->
+                <div class="box-top">
+  
+                    <!--profile-->
+                    <div class="profile">
+                        <!--img----->
+                        <div class="profile-img">
+                            <img src="https://images.pexels.com/photos/2253415/pexels-photo-2253415.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> Manya Gupta</strong>
+                            <span>@Manya34</span>
+                        </div>
+                    </div>
+  
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+  
+                </div>
+  
+                <!--Comments------->
+                <div class="client-comments">
+                    <p>I was a bit skeptical about trying out a foundation, but this one completely changed my perspective. It gives me a natural matte finish without feeling like I'm wearing a mask. It evens out my skin tone and hides blemishes flawlessly. This product has become a daily essential for me, and it's super easy to apply. Thumbs up for guys looking for a discreet way to enhance their appearance!</p>
+                </div>
+                
+            </div>
+
+              <!--BOX-5------->
+            <div class="testimonial-box">
+
+                <!--top-------->
+                <div class="box-top">
+  
+                    <!--profile-->
+                    <div class="profile">
+                        <!--img----->
+                        <div class="profile-img">
+                            <img src="https://images.pexels.com/photos/4063856/pexels-photo-4063856.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> Ruhi </strong>
+                            <span>@Ruhi28</span>
+                        </div>
+                    </div>
+  
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+  
+                </div>
+  
+                <!--Comments------->
+                <div class="client-comments">
+                    <p>I am in love with this blush palette! The colors are super pigmented, and they blend seamlessly. It's perfect for creating a natural flush or a more dramatic look. The packaging is adorable too. Highly recommended!</p>
+                </div>
+                
+            </div>
+
+               <!--BOX-6------->
+            <div class="testimonial-box">
+
+                <!--top-------->
+                <div class="box-top">
+  
+                    <!--profile-->
+                    <div class="profile">
+                        <!--img----->
+                        <div class="profile-img">
+                            <img src="https://images.pexels.com/photos/5473079/pexels-photo-5473079.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                        </div>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong> Aditi </strong>
+                            <span>@Aditi1302</span>
+                        </div>
+                    </div>
+  
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div>
+  
+                </div>
+  
+                <!--Comments------->
+                <div class="client-comments">
+                    <p>This mascara does a great job of giving my lashes a fuller, longer look. It's also clump-free, which is a huge plus. My only issue is that it can smudge a bit after a long day, but nothing a quick touch-up can't fix.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        </section>
+    </body>
+</html>

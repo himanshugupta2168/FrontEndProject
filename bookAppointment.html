@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Salon Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select, input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book a Hair Salon Appointment</h1>
+    </header>
+
+    <section>
+        <h2>Select a Hair Service</h2>
+        <form action="hair_appointment_confirmation.php" method="post">
+            <label for="service">Choose a Hair Service:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Haircut</option>
+                <option value="hair-coloring">Hair Coloring</option>
+                <option value="hairstyling">Hair Styling</option>
+            </select>
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Hair Appointment</button>
+        </form>
+    </section>
+</body>
+</html>
